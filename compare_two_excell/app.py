@@ -7,8 +7,13 @@ st.set_page_config(page_title="AI Excel Comparison Agent")
 
 st.title("🤖 AI Excel Comparison Agent")
 
-file1 = st.file_uploader("Upload Old Excel File", type=["xlsx"])
-file2 = st.file_uploader("Upload New Excel File", type=["xlsx"])
+#Upload Excel files from UI
+#file1 = st.file_uploader("Upload Old Excel File", type=["xlsx"])
+#file2 = st.file_uploader("Upload New Excel File", type=["xlsx"])
+
+#Read file from local path for testing purpose, you can uncomment above lines and comment below lines to use file uploader in streamlit
+file1 = "D:/tcs ai club/group-core-tcs-ai-club/compare_two_excell/files/Sheet 1.xlsx"
+file2 = "D:/tcs ai club/group-core-tcs-ai-club/compare_two_excell/files/Sheet 2.xlsx"
 
 primary_key = st.text_input("Enter Primary Key Column Name")
 
